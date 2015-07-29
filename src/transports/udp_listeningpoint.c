@@ -143,7 +143,7 @@ static void belle_sip_udp_listening_point_init(belle_sip_udp_listening_point_t *
  * If the channel does not exist, create it */
 static int on_udp_data(belle_sip_udp_listening_point_t *lp, unsigned int events){
 	int err;
-	unsigned char buf[4096];
+	unsigned char buf[6096];
 	struct sockaddr_storage addr;
 	socklen_t addrlen=sizeof(addr);
 
